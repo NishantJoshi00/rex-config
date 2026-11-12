@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  "runtime.version": "Lua 5.1",
+  "workspace.library": [
+    "types"
+  ],
+  "workspace.checkThirdParty": false,
+  "diagnostics.globals": [],
+  "type.weakUnionCheck": false,
+  "type.weakNilCheck": false,
+  "diagnostics.neededFileStatus": {
+    "missing-parameter": "Any",
+    "missing-fields": "Any",
+    "inject-field": "Any",
+    "param-type-mismatch": "Any",
+    "undefined-field": "Any"
+  },
+  "diagnostics.severity": {
+    "missing-parameter": "Error",
+    "missing-fields": "Error",
+    "inject-field": "Error",
+    "param-type-mismatch": "Error",
+    "assign-type-mismatch": "Error",
+    "undefined-global": "Error"
+  }
+}

@@ -1,0 +1,4 @@
+# Lets the Rex lid guard (lidguard.lua) run exactly these pmset commands without a password.
+# Install:  sudo visudo -cf lidguard.sudoers && sudo install -m 0440 -o root -g wheel lidguard.sudoers /etc/sudoers.d/rex-lidguard
+# Remove:   sudo rm /etc/sudoers.d/rex-lidguard
+nishantjoshi ALL=(root) NOPASSWD: /usr/bin/pmset -a disablesleep 0, /usr/bin/pmset -a disablesleep 1, /usr/bin/pmset sleepnow
